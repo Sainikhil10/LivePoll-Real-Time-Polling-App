@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LivePoll App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>📊 LivePoll</h1></header>
+
+  <section id="create-section">
+    <h2>Create a New Poll</h2>
+    <input id="poll-question" placeholder="Enter your question" />
+    <div id="options-container">
+      <input class="option-input" placeholder="Option 1" />
+      <input class="option-input" placeholder="Option 2" />
+    </div>
+    <button onclick="addOption()">➕ Add Option</button>
+    <button onclick="createPoll()">✅ Create Poll</button>
+  </section>
+
+  <hr>
+
+  <section id="poll-section" style="display:none;">
+    <h2 id="question-title"></h2>
+    <div id="vote-options"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
